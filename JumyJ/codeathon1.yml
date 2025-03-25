@@ -4,19 +4,17 @@ Description: AWS CodePipeline with GitHub as source and CodeBuild as build stage
 Parameters:
   GitHubToken:
     Type: String
-    Description: GitHub OAuth Token with repo access
     NoEcho: true
   GitHubOwner:
     Type: String
-    Description: GitHub repository owner
+    Default: Ojmk25
   GitHubRepo:
     Type: String
-    Description: GitHub repository name
+    Default: Codeathon
   GitHubBranch:
     Type: String
     Default: main
-    Description: GitHub branch to trigger the pipeline
-
+    
 Resources:
   ArtifactBucket:
     Type: AWS::S3::Bucket
