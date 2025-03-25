@@ -132,3 +132,13 @@ Resources:
               OutputArtifacts:
                 - Name: BuildArtifact
               RunOrder: 1
+         phases:
+            install:
+              runtime-versions:
+                nodejs: 18  
+            build:
+              commands:
+                - echo "Building the project..."
+                - npm install  
+                - npm run build  
+
