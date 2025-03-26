@@ -7,7 +7,6 @@ Parameters:
     NoEcho: true
   GitHubOwner:
     Type: String
-    Description: GitHub repository owner
   GitHubRepo:
     Type: String
     Description: GitHub repository name
