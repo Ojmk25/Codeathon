@@ -4,7 +4,6 @@ Description: AWS CodePipeline with GitHub as source and CodeBuild as build stage
 Parameters:
   GitHubToken:
     Type: String
-    Description: GitHub OAuth Token with repo access
     NoEcho: true
   GitHubOwner:
     Type: String
